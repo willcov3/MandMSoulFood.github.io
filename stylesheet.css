@@ -1,0 +1,215 @@
+﻿
+body {
+    background-color: lightgray;
+    font-family: Georgia, serif;
+}
+
+/*h1 is only for the main title in the header, which is the restuarant name*/
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+/*h2 is for all content headers*/
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*h3 is for any special messages */
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size:72px;
+    font-weight:bold;
+}
+
+/*Logo is fixed at the top of the web page with the header bar to its left and the navigation bar underneath*/
+#logo {
+    background-color: gray;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 215px;
+    z-index: 2;
+}
+
+/*Header includes name, address, phone number AND the main menu*/
+#header {
+    background-color: black;
+    position:fixed;
+    top:0px;
+    left:150px;
+    color: white;
+    height:215px;
+    width:100%;
+    padding-left:40px;
+    line-height:0.8;
+    z-index:2;
+}
+
+    .headerMenu {
+        display: inline;
+        list-style: none;
+        padding: 0px;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    .headerMenu li {
+        display: inline;
+        color: red;
+    }
+
+    .headerMenu li::after {
+        content: " | ";
+    }
+
+    .headerMenu li:last-child::after {
+        content: "";
+    }
+
+    .headerMenu a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .headerMenu a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .headerMenu a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+/*This is the in page navigation menu. Only used on pages that need in page navigation*/
+#navigation {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 215px;
+    left: 0px;
+    height: 100%;
+    width: 150px;
+    z-index: 2;
+}
+
+    .navigationMenu {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    .navigationMenu li {
+        color: white;
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: thin;
+        list-style: none;
+        padding:7px 0px 0px 7px;
+        
+    }
+
+    .navigationMenu a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .navigationMenu a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .navigationMenu a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    :target {
+        padding-top: 215px;
+        margin-top: -215px;
+    }
+
+/*This is the main content section*/
+#content {
+    background-color: lightgray;
+    position: relative;
+    top: 215px;
+    left: 150px;
+    bottom: 50px;
+    width: 60%;
+    z-index: 1;
+    margin: 50px 200px 300px 200px;
+}
+
+/*This is the alternate main content section for employee pages*/
+#employeeContent {
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    top: 215px;
+    left: 150px;
+    bottom: 50px;
+    width: 60%;
+    z-index: 1;
+    margin: 50px 200px 300px 200px;
+}
+
+/*This is the footer section which includes employee */
+#footer {
+    color: white;
+    background-color: green;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    z-index: 3;
+}
+
+    .footerMenu {
+        display: inline;
+        list-style: none;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .footerMenu li {
+        display: inline;
+        color: white;
+    }
+
+    .footerMenu a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .footerMenu a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .footerMenu a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+
+
+

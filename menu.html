@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>M&amp;M Soul Food - Menu</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        header {
+            border-top: 1px solid red;
+        }
+        
+        ul.menuItem li {
+            clear: both;
+        }
+
+            ul.menuItem li span:first-child {
+                float: left;
+                padding: 0 .4em 0 0;
+                margin: 0;
+            }
+
+            ul.menuItem li span + span {
+                float: right;
+                padding: 0 0 0 .4em;
+                margin: 0;
+            }
+
+            ul.menuItem li:after {
+                content: "";
+                display: block;
+                overflow: hidden;
+                height: 1em;
+                border-bottom: 1px dotted;
+            }
+    </style>
+</head>
+<body>
+    <!--WEBSITE HEADER. DO NOT CHANGE. MODIFY ON INDEX ONLY-->
+    <img id="logo" src="Images/logo.jpg" />
+    <div id="header">
+        <h1>M&amp;M Soul Food Restaurant</h1>
+        <p>335 E. Albertoni St.</p>
+        <p>Carson, CA 90746</p>
+        <p>(310) 324-5317</p>
+        <br /><br /><br />
+        <ul class="headerMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="orderOnline.html">Order Online</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!--THIS IS MY FOOTER. DO NOT CHANGE. MODIFY ON INDEX ONLY-->
+    <div id="footer">
+        <table class="footerMenu">
+            <tr style="width:1000px">
+                <th style="width:333px"></th>
+                <th style="width:333px"></th>
+                <th style="width:333px"></th>
+            </tr>
+            <tr>
+                <td><a href="employmentOppurtunities.html">Employment Oppurtunities</a></td>
+                <td><a href="employeePortal.html">Employee Portal</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--THIS IS MY IN PAGE NAVIGATION MENU WHICH WILL BE USED FOR LINKS WITHIN THE PAGE-->
+    <div id="navigation">
+        <ul class="navigationMenu">
+            <li><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#appetizers">Appetizers</a></li>
+            <li><a href="#burgers">Burgers &amp; Sandwiches</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#dinner">Dinner</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#beverages">Beverages</a></li>
+        </ul>
+    </div>
+
+    <!--MAIN CONTENT-->
+    <main id="content">
+        <a style="color:black; font-size:large;" href="printableMenu.pdf" target="_blank">Click here for a printable menu.</a><br /><br />
+        <!--This is our breakfast menu-->
+        <section id="breakfast">
+
+            <header style="color:red">Breakfast</header>
+
+            <p style="color:red">
+                Breakfast is available from 8am-12pm daily.
+            </p>
+
+            <h2>Signature Breakfast Dishes</h2>
+            <p>
+                Includes eggs, one side (rice, grits, or potatoes), and bread (biscuits or toast). <br />
+                Substitute pancakes or waffles for an additional charge.
+            </p>
+            <ul class="menuItem">
+                <li><span>Sausage Patty (Pork, Turkey, or Beef)</span><span>11.00</span></li>
+                <li><span>Bacon (Pork or Turkey)</span><span>10.50</span></li>
+                <li><span>Beef Hot Links</span><span>12.00</span></li>
+                <li><span>Turkey Links</span><span>10.00</span></li>
+                <li><span>Ham Steak</span><span>12.00</span></li>
+                <li><span>Red Snapper</span><span>12.50</span></li>
+                <li><span>Catfish</span><span>13.50</span></li>
+                <li><span>Salmon Croquettes</span><span>12.50</span></li>
+                <li><span>Pork Chop</span><span>11.25</span></li>
+                <li><span>Turkey Chops</span><span>14.50</span></li>
+                <li><span>Chicken Wings</span><span>12.50</span></li>
+                <li><span>Liver &amp; Onions</span><span>11.00</span></li>
+            </ul><br>
+
+            <h2>Omelettes</h2>
+            <p>
+                Includes one side (rice, grits, or potatoes), and bread (biscuits or toast). <br />
+                Substitute pancakes or waffles for an additional charge.
+            </p>
+            <ul class="menuItem">
+                <li><span>Cheese Omelette</span><span>10.00</span></li>
+                <li><span>Veggie Omelette</span><span>10.00</span></li>
+                <li><span>Turkey Link &amp; Cheese Omelette</span><span>11.00</span></li>
+                <li><span>Ham &amp; Cheese Omelette</span><span>12.00</span></li>
+                <li><span>Denver Omelette</span><span>12.00</span></li>
+            </ul>
+            <p style="font-style:italic;">Substitute egg whites for $0.75</p><br>
+
+            <h2>Breakfast Specials</h2>
+            <p>Please, No Subsitutions. Thank you!</p>
+            <ul class="menuItem">
+                <li><span>French Toast, 2 Links, 2 Bacon Strips, 2 Eggs</span><span>11.00</span></li>
+                <li><span>2 Turkey Bacon Strips &amp; Oatmeal</span><span>8.50</span></li>
+                <li><span>1 Hot Link, 2 Pancakes, 2 Eggs &amp; 2 Potatoes</span><span>11.00</span></li>
+                <li><span>2 Bacon Strips, 2 Pancakes &amp; 2 Eggs</span><span>10.50</span></li>
+                <li><span>1 Waffle &amp; 3 Wings</span><span>12.25</span></li>
+            </ul><br>
+
+            <h4>Venni's Ultimate Breakfast</h4>
+            <p>
+                Includes 2 chicken wings, 1 pc fish, 1 side (grits, rice, or potatoes), 2 Eggs, bread (biscuits,
+                toast, or pancakes). <br> $16.25
+            </p><br>
+
+            <h2>Early Bird Specials</h2>
+            <p>
+                Available Monday-Friday, 8am-10am. Includes 1 side (grits, rice, or potatoes), 2 Eggs, bread (biscuits,
+                or toast). <br />Substitute pancakes or waffles for an additional charge.
+            </p>
+            <ul class="menuItem">
+                <li><span>2 Bacon or 2 Turkey Links</span><span>9.50</span></li>
+                <li><span>1 Salmon Croquette</span><span>9.50</span></li>
+                <li><span>Turkey Link Omelette</span><span>9.50</span></li>
+            </ul><br>
+
+            <h2>Breakfast Sides</h2>
+            <ul class="menuItem">
+                <li><span>Pork Chop (1)</span><span>4.00</span></li>
+                <li><span>Chicken Wings (2)</span><span>4.00</span></li>
+                <li><span>Bacon Strips (Turkey or Pork)</span><span>3.50</span></li>
+                <li><span>Eggs (2)</span><span>2.00</span></li>
+                <li><span>French Toast (2)</span><span>4.00</span></li>
+                <li><span>Waffle</span><span>6.00</span></li>
+                <li><span>Pancakes (2)</span><span>4.00</span></li>
+                <li><span>Country Style Potatoes</span><span>3.50</span></li>
+                <li><span>Rice</span><span>3.00</span></li>
+                <li><span>Grits</span><span>3.00</span></li>
+            </ul><br>
+        </section>
+
+
+        <!--This is our appetizer menu-->
+        <section id="appetizers">
+            <header style="color:red">Appetizers</header>
+            <ul class="menuItem">
+                <li><span>Party Wings</span><span>9.00</span></li>
+                <li><span>Red Beans &amp; Rice</span><span>8.00</span></li>
+                <li><span>BBQ  Hot Links</span><span>7.00</span></li>
+            </ul><br />
+        </section>
+
+    
+        <!--This is our burger & sandwich menu-->
+        <section id="burgers">
+            <header style="color:red">Burgers &amp; Sandwiches</header>
+            <p style="color:red"> 
+                Burgers and Sandwiches are available Monday-Saturday, from 12pm-8pm. Served with 
+                your choice of fries or potato salad.
+            </p>
+
+            <h2>Burgers</h2>
+            <ul class="menuItem">
+                <li><span>Hamburger</span><span>10.50</span></li>
+                <li><span>Double Hamburger</span><span>12.00</span></li>
+                <li><span>Bacon Burger</span><span>13.50</span></li>
+            </ul><br />
+
+            <h2>Sandwiches</h2>
+            <ul class="menuItem">
+                <li><span>Fried Ham &amp; Cheese</span><span>9.00</span></li>
+                <li><span>Grilled Cheese</span><span>7.00</span></li>
+                <li><span>Red Snapper</span><span>12.00</span></li>
+                <li><span>Catfish</span><span>12.50</span></li>
+                <li><span>Hot Link</span><span>9.50</span></li>
+                <li><span>BLT</span><span>8.50</span></li>
+            </ul><br />
+        </section>
+
+
+        <!--This is our lunch menu-->
+        <section id="lunch">
+            <header style="color:red">Lunch</header>
+            <p style="color:red">
+                Lunch is available from 11am-3pm, Monday-Friday. Served with your choice of 2 sides and cornbread muffins.
+            </p>
+            <h2>Signature Lunch Dishes</h2>
+            <p>
+                <b>Side Orders:</b> Collard Greens, Candied Yam, Mac &amp; Cheese, Black Eyed Peas, Potato Salad, Succotash, Dressing, Cabbage, String Beans,
+                Red Beans, Candied Yams, Buttered Corn, Mashed Potatoes, Rice &amp; Gravy
+            </p>
+            <ul class="menuItem">
+                <li><span>Meat Loaf</span><span>10.99</span></li>
+                <li><span>BBQ Hot Links</span><span>10.99</span></li>
+                <li><span>Salmon Croquettes</span><span>12.99</span></li>
+                <li><span>Catfish</span><span>13.99</span></li>
+                <li><span>Red Snapper</span><span>11.99</span></li>
+                <li><span>Turkey Chops</span><span>13.99</span></li>
+                <li><span>Pork Chops</span><span>11.99</span></li>
+                <li><span>BBQ Chicken</span><span>10.99</span></li>
+                <li><span>Baked Chicken*</span><span>10.99</span></li>
+                <li><span>Smothered Chicken*</span><span>10.99</span></li>
+                <li><span>Fried Chicken*</span><span>10.99</span></li>
+                <li><span>Turkey Wings</span><span>11.99</span></li>
+                <li><span>Short Ribs</span><span>13.99</span></li>
+                <li><span>Ox Tails</span><span>16.99</span></li>
+                <li><span>Chitterlings</span><span>21.50</span></li>
+                <li><span>Liver &amp; Onions</span><span>10.99</span></li>
+            </ul>
+            <p style="font-style:italic;">*Additional charge for white meat</p><br />
+            <h2>Today's Lunch Specials</h2>
+            <ul class="menuItem">
+                <li><span>Monday: Neckbones</span><span>10.99</span></li>
+                <li><span>Tuesday: Sirloin Tips</span><span>10.99</span></li>
+                <li><span>Wednesday: Pig Feet</span><span>10.99</span></li>
+                <li><span>Thursday: Chicken &amp; Dumplings</span><span>10.99</span></li>
+                <li><span>Friday-Saturday: BBQ Pork Ribs</span><span>12.99</span></li>
+                <li><span>Friday-Saturday: Smothered Steak</span><span>12.99</span></li>
+                <li><span>Friday-Sunday: Gumbo &amp; Rice*</span><span>16.99</span></li>
+            </ul>
+            <p style="font-style:italic;">*Sides not included with gumbo</p><br />
+
+        </section>
+
+
+        <!--This is our dinner menu-->
+        <section id="dinner">
+            <header style="color:red">Dinner</header>
+            <p style="color:red">
+                Dinner is available from 11am-8pm. Served with your choice of 3 sides and cornbread muffins.
+            </p>
+            <h2>Signature Dinner Dishes</h2>
+            <p>
+                <b>Side Orders:</b> Collard Greens, Candied Yam, Mac &amp; Cheese, Black Eyed Peas, Potato Salad, Succotash, Dressing, Cabbage, String Beans,
+                Red Beans, Candied Yams, Buttered Corn, Mashed Potatoes, Rice &amp; Gravy
+            </p>
+            <ul class="menuItem">
+                <li><span>Meat Loaf</span><span>13.99</span></li>
+                <li><span>BBQ Hot Links</span><span>13.99</span></li>
+                <li><span>Salmon Croquettes</span><span>15.99</span></li>
+                <li><span>Catfish</span><span>19.99</span></li>
+                <li><span>Red Snapper</span><span>18.99</span></li>
+                <li><span>Turkey Chops</span><span>16.99</span></li>
+                <li><span>Pork Chops</span><span>16.99</span></li>
+                <li><span>BBQ Chicken</span><span>11.99</span></li>
+                <li><span>Baked Chicken*</span><span>11.99</span></li>
+                <li><span>Smothered Chicken*</span><span>13.99</span></li>
+                <li><span>Fried Chicken*</span><span>13.99</span></li>
+                <li><span>Turkey Wings</span><span>16.99</span></li>
+                <li><span>Short Ribs</span><span>19.99</span></li>
+                <li><span>Ox Tails</span><span>22.99</span></li>
+                <li><span>Chitterlings</span><span>24.50</span></li>
+                <li><span>Liver &amp; Onions</span><span>13.99</span></li>
+                <li><span>Veggie Plate</span><span>11.00</span></li>
+            </ul>
+            <p style="font-style:italic;">*Additional charge for white meat</p><br />
+            <h2>Today's Dinner Specials</h2>
+            <ul class="menuItem">
+                <li><span>Monday: Neckbones</span><span>13.99</span></li>
+                <li><span>Tuesday: Sirloin Tips</span><span>13.99</span></li>
+                <li><span>Wednesday: Pig Feet</span><span>13.99</span></li>
+                <li><span>Thursday: Chicken &amp; Dumplings</span><span>13.99</span></li>
+                <li><span>Friday-Saturday: BBQ Pork Ribs</span><span>16.99</span></li>
+                <li><span>Friday-Saturday: Smothered Steak</span><span>16.99</span></li>
+                <li><span>Friday-Sunday: Gumbo &amp; Rice*</span><span>16.99</span></li>
+            </ul>
+            <p style="font-style:italic;">*Sides not included with gumbo</p><br />
+            <h3>Free Fried Chicken!</h3>
+            <p>
+                Free 2 piece fried chicken with your purchase of a veggie plate. <br />
+                Available on Tuesday's only.
+            </p><br />
+            <h2>Daily Specials</h2>
+            <p>Served with one side</p>
+            <ul class="menuItem">
+                <li><span>4 Fried Chicken Wings</span><span>11.50</span></li>
+                <li><span>2 Piece Fried Chicken (dark)</span><span>8.99</span></li>
+                <li><span>2 Piece Fried Chicken (white)</span><span>10.49</span></li>
+                <li><span>BBQ Hot Links</span><span>9.50</span></li>
+                <li><span>Red Snapper Nuggets</span><span>11.00</span></li>
+                <li><span>Catfish Nuggets</span><span>12.99</span></li>
+            </ul><br />
+        </section>
+
+
+        <!--This is our dessert menu-->
+        <section id="desserts">
+            <header style="color:red">Desserts</header>
+            <p style="color:red"> Try one of our fresh homemade deserts, available in 3 sizes: small, medium, and large.</p>
+            <ul>
+                <li>Peach Cobbler</li>
+                <li>Banana Pudding</li>
+            </ul>
+            <p>Small $3.50  |  Medium $6.50  |  Large $11.50</p><br />
+        </section>
+
+        <!--This is our beverage menu-->
+        <section id="beverages">
+            <header style="color:red">Beverages</header>
+            <p style="color:red"> Cool down with one of our sweet southern style beverages or enjoy a hot coffee!</p>
+
+            <ul>
+                <li>Lemonade</li>
+                <li>Iced Tea</li>
+                <li>Fruit Punch</li>
+                <li>Soft Drinks</li>
+                <li>Coffee</li>
+                <li>Blue Thunder - Lemonade &amp; Polar Blast</li>
+                <li>Sunrise - Lemonade &amp; Orange Juice</li>
+                <li>Sunset - Lemonade &amp; Iced Tea</li>
+                <li>Twist - Lemonade &amp; Fruit Punch</li>
+            </ul>
+            <p>Regular $3 | Large $5</p>
+            
+        </section>
+    </main>
+    
+    <!--This closes the main content div. Do not code below this line-->
+
+
+</body>
+</html>

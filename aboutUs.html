@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>M&amp;M Soul Food - About Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        #content {
+            display: grid;
+            grid-gap: 50px 50px;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 'title title' 'mississippiMary mississippiMaryImage' 'mAndMSoulFood mAndMSoulFoodImage' 'venniMac venniMacImage';
+        }
+        #mississippiMary {
+            grid-area: mississippiMary;
+        }
+        #mAndMSoulFood {
+            grid-area: mAndMSoulFood;
+        }
+        #venniMac {
+            grid-area: venniMac;
+        }
+        #mississippiMaryImage {
+            grid-area: mississippiMaryImage;
+            padding-top: 50px;
+        }
+
+        #mAndMSoulFoodImage {
+            grid-area: mAndMSoulFoodImage;
+            padding-top: 50px;
+        }
+
+        #venniMacImage {
+            grid-area: venniMacImage;
+            padding-top: 50px;
+        }
+        .founderImage {
+            width: 100px;
+        }
+        #title {
+            grid-area:title; 
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px black;
+            font-size:50px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--WEBSITE HEADER. DO NOT CHANGE. MODIFY ON INDEX ONLY-->
+    <img id="logo" src="Images/logo.jpg" />
+    <div id="header">
+        <h1>M&amp;M Soul Food Restaurant</h1>
+        <p>335 E. Albertoni St.</p>
+        <p>Carson, CA 90746</p>
+        <p>(310) 324-5317</p>
+        <br /><br /><br />
+        <ul class="headerMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="orderOnline.html">Order Online</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!--THIS IS MY FOOTER. DO NOT CHANGE. MODIFY ON INDEX ONLY-->
+    <div id="footer">
+        <table class="footerMenu">
+            <tr style="width:1000px">
+                <th style="width:333px"></th>
+                <th style="width:333px"></th>
+                <th style="width:333px"></th>
+            </tr>
+            <tr>
+                <td><a href="employmentOppurtunities.html">Employment Oppurtunities</a></td>
+                <td><a href="employeePortal.html">Employee Portal</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--THIS IS MY IN PAGE NAVIGATION MENU WHICH WILL BE USED FOR LINKS WITHIN THE PAGE-->
+    <div id="navigation">
+        <ul class="navigationMenu">
+            <li><a href="#mississippiMary">Mississippi Mary</a></li>
+            <li><a href="#mAndMSoulFood">M &amp; M Soul Food</a></li>
+            <li><a href="#venniMac">Venni Mac</a></li>
+        </ul>
+    </div>
+
+    <!--MAIN CONTENT-->
+
+    <div id="content">
+            <header id="title">Our History</header>
+            <div id="mississippiMary">
+                <h2>Mississippi Mary</h2>
+                <p>
+                    Mary Elizabeth McCallum-Stewart, the first born of Fannie McCallum, was born in Jackson, Mississippi.
+                    Her family did not have great wealth, but they were great in love, and also great cooks.
+                    Mary first learned to cook under her mother’s guidance. She would later take these cooking skills,
+                    along with her own pots and pans, to the west coast in search of something better for her and her children.
+                </p>
+                <p>
+                    Mary was the first to leave our home of Jackson, Mississippi. When she first arrived in Los Angeles,
+                    she sold dinners out the trunk of her car.
+                </p>
+            </div>
+
+            <div id="mississippiMaryImage">
+                <img class="founderImage" src="Images/mississippiMary.jpg" />
+            </div>
+
+            <div id="mAndMSoulFood">
+                <h2>M &amp; M Soul Food</h2>
+                <p>
+                    In 1964, she met Mercedes Hall, a business woman. Ms. Hall owned a bar & grill and offered Mary
+                    the opportunity of a lifetime...the chance to turn her vision into a reality. Thus M&M Soul Food was born.
+                </p>
+                <p>
+                    Now, more than 50 years later, the name M&M Soul Food is a household name that holds international recognition.
+                    We, the family of this great legacy, hold in our hearts the great strides she made, the opportunities she provided,
+                    the empire she built, the love she spread, the prosperity she gained, the peace she left, and the unity she obtained.
+                </p>
+            </div>
+
+            <div id="mAndMSoulFoodImage">
+                <img class="founderImage" src="Images/oldRestaurant.jpg" />
+            </div>
+
+            <div id="venniMac">
+                <h2>Venni Mac</h2>
+                <p>
+                    The McCallum family has owned and operated M & M Soul Food Restaurant since the mid-1960's. In 1989, Mary's brother, Ventress McCallum,
+                    bought one of the three restaurants marking the beginning of Venni Mac's M&M Soulfood Restaurant. Mary and Ventress left a legacy that
+                    the McCallum family will continue to cherish. Though many have tried to duplicate, we were the ones to originate. “Be Original”
+                </p>
+                <p>
+                    The restaurant has been a major contributor to the community by providing jobs, quality food and catering services. The restaurant specializes in seafood gumbo,
+                    catfish, red snapper, chicken, collard greens, macaroni and cheese, candied yams, beef short ribs, oxtails and cornbread and boasts the best peach cobbler and
+                    banana pudding on the west coast.
+                </p>
+            </div>
+
+            <div id="venniMacImage">
+                <img class="founderImage" src="Images/venniMac.jpg" />
+            </div>
+
+    </div>
+
+        <!--This closes the main content div. Do not code below this line-->
+
+
+</body>
+</html>

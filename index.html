@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>M&amp;M Soul Food - Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        #content {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 'hours mainImage' 'location location' 'mapImage locationImage';
+        }
+        #hours {
+            grid-area: hours;
+        }
+        #location {
+            grid-area: location;
+        }
+        #mainImage {
+            grid-area: mainImage;
+            float: right;
+        }
+        #mapImage {
+            grid-area: mapImage;
+        }
+        #locationImage {
+            grid-area: locationImage;
+        }
+        .image {
+            width: 350px;
+        }
+        .tagline {
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px black;
+        }
+        .socialMediaIcon {
+            width:50px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <!--WEBSITE HEADER-->
+    <img id="logo" src="Images/logo.jpg" />
+    <div id="header">
+        <h1>M&amp;M Soul Food Restaurant</h1>
+        <p>335 E. Albertoni St.</p>
+        <p>Carson, CA 90746</p>
+        <p>(310) 324-5317</p>
+        <br /><br /><br />
+        <ul class="headerMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="orderOnline.html">Order Online</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!--IN PAGE NAVIGATION MENU-->
+    <div id="navigation">
+        <ul class="navigationMenu">
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
+    </div>
+
+    <!--THIS IS MY FOOTER-->
+    <div id="footer">
+        <table class="footerMenu">
+            <tr style="width:1000px">
+                <th style="width:333px"></th>
+                <th style="width:333px"></th>
+                <th style="width:333px"></th>
+            </tr>
+            <tr>
+                <td><a href="employmentOppurtunities.html">Employment Oppurtunities</a></td>
+                <td><a href="employeePortal.html">Employee Portal</a></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <!--MAIN CONTENT-->
+    <div id="content">
+
+        <div id="hours">
+            <a href="https://www.facebook.com/TheOriginalMMSoulFood/"><img class="socialMediaIcon" src="Images/facebook.jpg" /></a>
+            <a href="https://www.yelp.com/biz/m-and-m-soul-food-carson-2?osq=m%26m"><img class="socialMediaIcon" src="Images/yelp.jpg" /></a>
+            <a href="https://postmates.com/merchant/mm-soul-food-restaurant-carson?client=customer.web&version=3.0.0"><img class="socialMediaIcon" src="Images/postmates.jpg" /></a>
+            <h1 class="tagline">be original.</h1>
+            <h2>Hours</h2>
+            <table>
+                <tr>
+                    <td>Sunday</td>
+                    <td>8AM-8PM</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>8AM-8PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>8AM-8PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8AM-8PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>8AM-8PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8AM-8PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>8AM-8PM</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="mainImage">
+            <img src="Images/dinner.jpg" class="image" />
+        </div>
+
+        <div id="location">
+            <h2>Location</h2>
+            <p>
+                Venni Mac's M & M Soul Food Restaurant is located in Carson, adjacent
+                to the 91 Freeway at 335 East Albertoni Street. Ste. 300. We have been at this location since 2006.
+                M&M's provides southern home-style cooking with southern elegance and decorum,
+                giving customers the comfort of a home cooked meal in a family style environment.
+            </p>
+        </div>
+
+        <div id="mapImage">
+            <a href="https://www.google.com/maps/dir/335+E+Albertoni+St,+Carson,+CA/M%26m+soul+food+google/@33.8718176,-118.2725093,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x80c2cac155c3bf2f:0x792d035f2bc87165!2m2!1d-118.2703406!2d33.8718751!1m5!1m1!1s0x80c2cac15587d11b:0xf1c142d0fefe4ea2!2m2!1d-118.2703007!2d33.8718889">
+                <img src="Images/map.jpg" class="image" />
+            </a>
+        </div>
+
+        <div id="locationImage">
+            <img src="Images/location.jpg" class="image" alt="We are located in Carson adjacent
+                to the 91 Freeway at 335 East Albertoni Street" />
+        </div>
+
+    </div>
+    <!--This closes the main content div. Do not code below this line-->
+
+
+</body>
+</html>
