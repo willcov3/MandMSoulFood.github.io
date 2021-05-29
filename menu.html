@@ -12,6 +12,15 @@
             border-top: 1px solid red;
         }
         
+        .foodIcon {
+            width:150px;
+            
+        }
+        .tagline {
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px black;
+        }
         ul.menuItem li {
             clear: both;
         }
@@ -74,7 +83,6 @@
     <div id="navigation">
         <ul class="navigationMenu">
             <li><a href="#breakfast">Breakfast</a></li>
-            <li><a href="#appetizers">Appetizers</a></li>
             <li><a href="#burgers">Burgers &amp; Sandwiches</a></li>
             <li><a href="#lunch">Lunch</a></li>
             <li><a href="#dinner">Dinner</a></li>
@@ -85,7 +93,21 @@
 
     <!--MAIN CONTENT-->
     <main id="content">
-        <a style="color:black; font-size:large;" href="printableMenu.pdf" target="_blank">Click here for a printable menu.</a><br /><br />
+        <h1 class="tagline">Our Menu</h1>
+        <p>
+            We provide high quality food made with fresh ingredients. If you are not satisfied with your purchase, bring the food back, and we will be happy to remake your meal for you.
+            Please note that item availability is limited, and all menu items may not be available.<br /> <br />Select an image below to jump to menus.
+        </p>
+
+        <a href="#breakfast" title="Click here to view breakfast menu."><img class="foodIcon" src="Images/breakfast.jpg" /></a>
+        <a href="#lunch" title="Click here to view lunch menu."><img class="foodIcon" src="Images/oxTails.jpg" /></a>
+        <a href="#burgers" title="Click here to view sandwich menu."><img class="foodIcon" src="Images/burger.jpg" /></a>
+        <a href="#dinner" title="Click here to view dinner menu."><img class="foodIcon" src="Images/porkChops.jpg" /></a>
+
+        <br>
+
+        <!--<a style="color:green; font-size:large;" href="printableMenu.pdf" target="_blank">Click here to print or download menu PDF.</a><br /><br />-->
+        <a style="color:green; font-size:large;" href="cateringMenu.docx" target="_blank">Click here to print or download catering menu.</a><br /><br />
         <!--This is our breakfast menu-->
         <section id="breakfast">
 
@@ -101,18 +123,19 @@
                 Substitute pancakes or waffles for an additional charge.
             </p>
             <ul class="menuItem">
-                <li><span>Sausage Patty (Pork, Turkey, or Beef)</span><span>11.00</span></li>
-                <li><span>Bacon (Pork or Turkey)</span><span>10.50</span></li>
-                <li><span>Beef Hot Links</span><span>12.00</span></li>
-                <li><span>Turkey Links</span><span>10.00</span></li>
-                <li><span>Ham Steak</span><span>12.00</span></li>
-                <li><span>Red Snapper</span><span>12.50</span></li>
-                <li><span>Catfish</span><span>13.50</span></li>
-                <li><span>Salmon Croquettes</span><span>12.50</span></li>
-                <li><span>Pork Chop</span><span>11.25</span></li>
-                <li><span>Turkey Chops</span><span>14.50</span></li>
-                <li><span>Chicken Wings</span><span>12.50</span></li>
-                <li><span>Liver &amp; Onions</span><span>11.00</span></li>
+                <li><span>Sausage Patty (Pork, Turkey, or Beef)</span><span>11.75</span></li>
+                <li><span>Bacon (Pork or Turkey)</span><span>11.25</span></li>
+                <li><span>Beef Hot Links</span><span>13.00</span></li>
+                <li><span>Turkey Links</span><span>11.25</span></li>
+                <li><span>Liver &amp; Onions</span><span>11.75</span></li>
+                <li><span>Ham Steak</span><span>12.75</span></li>
+                <li><span>Red Snapper</span><span>13.25</span></li>
+                <li><span>Catfish</span><span>14.25</span></li>
+                <li><span>Salmon Croquettes</span><span>13.25</span></li>
+                <li><span>Pork Chop</span><span>15.25</span></li>
+                <li><span>Turkey Chops</span><span>15.25</span></li>
+                <li><span>Chicken Wings</span><span>13.25</span></li>
+
             </ul><br>
 
             <h2>Omelettes</h2>
@@ -121,28 +144,29 @@
                 Substitute pancakes or waffles for an additional charge.
             </p>
             <ul class="menuItem">
-                <li><span>Cheese Omelette</span><span>10.00</span></li>
+                <li><span>Cheese Omelette</span><span>10.50</span></li>
                 <li><span>Veggie Omelette</span><span>10.00</span></li>
-                <li><span>Turkey Link &amp; Cheese Omelette</span><span>11.00</span></li>
-                <li><span>Ham &amp; Cheese Omelette</span><span>12.00</span></li>
-                <li><span>Denver Omelette</span><span>12.00</span></li>
+                <li><span>Turkey Link &amp; Cheese Omelette</span><span>10.00</span></li>
+                <li><span>Ham &amp; Cheese Omelette</span><span>13.25</span></li>
+                <li><span>Denver Omelette</span><span>14.00</span></li>
             </ul>
             <p style="font-style:italic;">Substitute egg whites for $0.75</p><br>
+            <p style="font-style:italic;">Add veggies for $0.45</p><br>
 
             <h2>Breakfast Specials</h2>
             <p>Please, No Subsitutions. Thank you!</p>
             <ul class="menuItem">
-                <li><span>French Toast, 2 Links, 2 Bacon Strips, 2 Eggs</span><span>11.00</span></li>
-                <li><span>2 Turkey Bacon Strips &amp; Oatmeal</span><span>8.50</span></li>
-                <li><span>1 Hot Link, 2 Pancakes, 2 Eggs &amp; 2 Potatoes</span><span>11.00</span></li>
-                <li><span>2 Bacon Strips, 2 Pancakes &amp; 2 Eggs</span><span>10.50</span></li>
-                <li><span>1 Waffle &amp; 3 Wings</span><span>12.25</span></li>
+                <li><span>French Toast, 2 Links, 2 Bacon Strips, 2 Eggs</span><span>11.50</span></li>
+                <li><span>2 Turkey Bacon Strips &amp; Oatmeal</span><span>11.25</span></li>
+                <li><span>1 Hot Link, 2 Pancakes, 2 Eggs &amp; 2 Potatoes</span><span>12.00</span></li>
+                <li><span>2 Bacon Strips, 2 Pancakes &amp; 2 Eggs</span><span>10.75</span></li>
+                <li><span>1 Waffle &amp; 3 Wings</span><span>13.00</span></li>
             </ul><br>
 
             <h4>Venni's Ultimate Breakfast</h4>
             <p>
                 Includes 2 chicken wings, 1 pc fish, 1 side (grits, rice, or potatoes), 2 Eggs, bread (biscuits,
-                toast, or pancakes). <br> $16.25
+                toast, or pancakes). <br> $17.00
             </p><br>
 
             <h2>Early Bird Specials</h2>
@@ -151,61 +175,49 @@
                 or toast). <br />Substitute pancakes or waffles for an additional charge.
             </p>
             <ul class="menuItem">
-                <li><span>2 Bacon or 2 Turkey Links</span><span>9.50</span></li>
-                <li><span>1 Salmon Croquette</span><span>9.50</span></li>
-                <li><span>Turkey Link Omelette</span><span>9.50</span></li>
+                <li><span>2 Bacon or 2 Turkey Links</span><span>10.25</span></li>
+                <li><span>1 Salmon Croquette</span><span>10.25</span></li>
+                <li><span>Turkey Link Omelette</span><span>10.25</span></li>
             </ul><br>
 
             <h2>Breakfast Sides</h2>
             <ul class="menuItem">
-                <li><span>Pork Chop (1)</span><span>4.00</span></li>
-                <li><span>Chicken Wings (2)</span><span>4.00</span></li>
-                <li><span>Bacon Strips (Turkey or Pork)</span><span>3.50</span></li>
-                <li><span>Eggs (2)</span><span>2.00</span></li>
-                <li><span>French Toast (2)</span><span>4.00</span></li>
+                <li><span>Pork Chop (1)</span><span>4.25</span></li>
+                <li><span>Chicken Wings (2)</span><span>4.50</span></li>
+                <li><span>Bacon Strips (Turkey or Pork)</span><span>3.75</span></li>
+                <li><span>Eggs (1)</span><span>2.75</span></li>
+                <li><span>French Toast (2)</span><span>5.00</span></li>
                 <li><span>Waffle</span><span>6.00</span></li>
                 <li><span>Pancakes (2)</span><span>4.00</span></li>
-                <li><span>Country Style Potatoes</span><span>3.50</span></li>
+                <li><span>Country Style Potatoes</span><span>4.00</span></li>
                 <li><span>Rice</span><span>3.00</span></li>
                 <li><span>Grits</span><span>3.00</span></li>
             </ul><br>
         </section>
 
-
-        <!--This is our appetizer menu-->
-        <section id="appetizers">
-            <header style="color:red">Appetizers</header>
-            <ul class="menuItem">
-                <li><span>Party Wings</span><span>9.00</span></li>
-                <li><span>Red Beans &amp; Rice</span><span>8.00</span></li>
-                <li><span>BBQ  Hot Links</span><span>7.00</span></li>
-            </ul><br />
-        </section>
-
-    
         <!--This is our burger & sandwich menu-->
         <section id="burgers">
             <header style="color:red">Burgers &amp; Sandwiches</header>
-            <p style="color:red"> 
-                Burgers and Sandwiches are available Monday-Saturday, from 12pm-8pm. Served with 
+            <p style="color:red">
+                Burgers and Sandwiches are available Monday-Saturday, from 12pm-8pm. Served with
                 your choice of fries or potato salad.
             </p>
 
             <h2>Burgers</h2>
             <ul class="menuItem">
-                <li><span>Hamburger</span><span>10.50</span></li>
-                <li><span>Double Hamburger</span><span>12.00</span></li>
-                <li><span>Bacon Burger</span><span>13.50</span></li>
+                <li><span>Hamburger</span><span>11.25</span></li>
+                <li><span>Double Hamburger</span><span>12.75</span></li>
+                <li><span>Bacon Burger</span><span>14.25</span></li>
             </ul><br />
 
             <h2>Sandwiches</h2>
             <ul class="menuItem">
-                <li><span>Fried Ham &amp; Cheese</span><span>9.00</span></li>
-                <li><span>Grilled Cheese</span><span>7.00</span></li>
-                <li><span>Red Snapper</span><span>12.00</span></li>
-                <li><span>Catfish</span><span>12.50</span></li>
-                <li><span>Hot Link</span><span>9.50</span></li>
-                <li><span>BLT</span><span>8.50</span></li>
+                <li><span>Fried Ham &amp; Cheese</span><span>9.75</span></li>
+                <li><span>Grilled Cheese</span><span>7.75</span></li>
+                <li><span>Red Snapper</span><span>12.75</span></li>
+                <li><span>Catfish</span><span>13.25</span></li>
+                <li><span>Hot Link</span><span>10.25</span></li>
+                <li><span>BLT</span><span>9.25</span></li>
             </ul><br />
         </section>
 
@@ -222,32 +234,32 @@
                 Red Beans, Candied Yams, Buttered Corn, Mashed Potatoes, Rice &amp; Gravy
             </p>
             <ul class="menuItem">
-                <li><span>Meat Loaf</span><span>10.99</span></li>
+                <li><span>Meat Loaf</span><span>11.99</span></li>
                 <li><span>BBQ Hot Links</span><span>10.99</span></li>
-                <li><span>Salmon Croquettes</span><span>12.99</span></li>
-                <li><span>Catfish</span><span>13.99</span></li>
-                <li><span>Red Snapper</span><span>11.99</span></li>
-                <li><span>Turkey Chops</span><span>13.99</span></li>
-                <li><span>Pork Chops</span><span>11.99</span></li>
+                <li><span>Salmon Croquettes</span><span>13.99</span></li>
+                <li><span>Catfish</span><span>14.99</span></li>
+                <li><span>Red Snapper</span><span>12.99</span></li>
+                <li><span>Turkey Chops</span><span>15.99</span></li>
+                <li><span>Pork Chops</span><span>15.99</span></li>
                 <li><span>BBQ Chicken</span><span>10.99</span></li>
                 <li><span>Baked Chicken*</span><span>10.99</span></li>
                 <li><span>Smothered Chicken*</span><span>10.99</span></li>
                 <li><span>Fried Chicken*</span><span>10.99</span></li>
-                <li><span>Turkey Wings</span><span>11.99</span></li>
-                <li><span>Short Ribs</span><span>13.99</span></li>
-                <li><span>Ox Tails</span><span>16.99</span></li>
+                <li><span>Turkey Wings</span><span>12.99</span></li>
+                <li><span>Short Ribs</span><span>14.99</span></li>
+                <li><span>Ox Tails</span><span>17.99</span></li>
                 <li><span>Chitterlings</span><span>21.50</span></li>
-                <li><span>Liver &amp; Onions</span><span>10.99</span></li>
+                <li><span>Liver &amp; Onions</span><span>11.99</span></li>
             </ul>
             <p style="font-style:italic;">*Additional charge for white meat</p><br />
             <h2>Today's Lunch Specials</h2>
             <ul class="menuItem">
-                <li><span>Monday: Neckbones</span><span>10.99</span></li>
-                <li><span>Tuesday: Sirloin Tips</span><span>10.99</span></li>
-                <li><span>Wednesday: Pig Feet</span><span>10.99</span></li>
-                <li><span>Thursday: Chicken &amp; Dumplings</span><span>10.99</span></li>
-                <li><span>Friday-Saturday: BBQ Pork Ribs</span><span>12.99</span></li>
-                <li><span>Friday-Saturday: Smothered Steak</span><span>12.99</span></li>
+                <li><span>Monday: Neckbones</span><span>11.99</span></li>
+                <li><span>Tuesday: Sirloin Tips</span><span>11.99</span></li>
+                <li><span>Wednesday: Pig Feet</span><span>11.99</span></li>
+                <li><span>Thursday: Chicken &amp; Dumplings</span><span>11.99</span></li>
+                <li><span>Friday-Saturday: BBQ Pork Ribs</span><span>13.99</span></li>
+                <li><span>Friday-Saturday: Smothered Steak</span><span>13.99</span></li>
                 <li><span>Friday-Sunday: Gumbo &amp; Rice*</span><span>16.99</span></li>
             </ul>
             <p style="font-style:italic;">*Sides not included with gumbo</p><br />
@@ -267,34 +279,34 @@
                 Red Beans, Candied Yams, Buttered Corn, Mashed Potatoes, Rice &amp; Gravy
             </p>
             <ul class="menuItem">
-                <li><span>Meat Loaf</span><span>13.99</span></li>
-                <li><span>BBQ Hot Links</span><span>13.99</span></li>
-                <li><span>Salmon Croquettes</span><span>15.99</span></li>
-                <li><span>Catfish</span><span>19.99</span></li>
-                <li><span>Red Snapper</span><span>18.99</span></li>
-                <li><span>Turkey Chops</span><span>16.99</span></li>
-                <li><span>Pork Chops</span><span>16.99</span></li>
-                <li><span>BBQ Chicken</span><span>11.99</span></li>
-                <li><span>Baked Chicken*</span><span>11.99</span></li>
-                <li><span>Smothered Chicken*</span><span>13.99</span></li>
-                <li><span>Fried Chicken*</span><span>13.99</span></li>
-                <li><span>Turkey Wings</span><span>16.99</span></li>
-                <li><span>Short Ribs</span><span>19.99</span></li>
-                <li><span>Ox Tails</span><span>22.99</span></li>
+                <li><span>Meat Loaf</span><span>14.99</span></li>
+                <li><span>BBQ Hot Links</span><span>14.99</span></li>
+                <li><span>Salmon Croquettes</span><span>16.99</span></li>
+                <li><span>Catfish</span><span>20.99</span></li>
+                <li><span>Red Snapper</span><span>19.99</span></li>
+                <li><span>Turkey Chops</span><span>17.99</span></li>
+                <li><span>Pork Chops</span><span>17.99</span></li>
+                <li><span>BBQ Chicken</span><span>12.99</span></li>
+                <li><span>Baked Chicken*</span><span>12.99</span></li>
+                <li><span>Smothered Chicken*</span><span>14.99</span></li>
+                <li><span>Fried Chicken*</span><span>14.99</span></li>
+                <li><span>Turkey Wings</span><span>17.99</span></li>
+                <li><span>Short Ribs</span><span>20.99</span></li>
+                <li><span>Ox Tails</span><span>23.99</span></li>
                 <li><span>Chitterlings</span><span>24.50</span></li>
-                <li><span>Liver &amp; Onions</span><span>13.99</span></li>
-                <li><span>Veggie Plate</span><span>11.00</span></li>
+                <li><span>Liver &amp; Onions</span><span>14.99</span></li>
+                <li><span>Veggie Plate</span><span>11.50</span></li>
             </ul>
             <p style="font-style:italic;">*Additional charge for white meat</p><br />
             <h2>Today's Dinner Specials</h2>
             <ul class="menuItem">
-                <li><span>Monday: Neckbones</span><span>13.99</span></li>
-                <li><span>Tuesday: Sirloin Tips</span><span>13.99</span></li>
-                <li><span>Wednesday: Pig Feet</span><span>13.99</span></li>
-                <li><span>Thursday: Chicken &amp; Dumplings</span><span>13.99</span></li>
-                <li><span>Friday-Saturday: BBQ Pork Ribs</span><span>16.99</span></li>
-                <li><span>Friday-Saturday: Smothered Steak</span><span>16.99</span></li>
-                <li><span>Friday-Sunday: Gumbo &amp; Rice*</span><span>16.99</span></li>
+                <li><span>Monday: Neckbones</span><span>14.99</span></li>
+                <li><span>Tuesday: Sirloin Tips</span><span>14.99</span></li>
+                <li><span>Wednesday: Pig Feet</span><span>14.99</span></li>
+                <li><span>Thursday: Chicken &amp; Dumplings</span><span>14.99</span></li>
+                <li><span>Friday-Saturday: BBQ Pork Ribs</span><span>17.99</span></li>
+                <li><span>Friday-Saturday: Smothered Steak</span><span>17.99</span></li>
+                <li><span>Friday-Sunday: Gumbo &amp; Rice*</span><span>17.99</span></li>
             </ul>
             <p style="font-style:italic;">*Sides not included with gumbo</p><br />
             <h3>Free Fried Chicken!</h3>
@@ -305,7 +317,7 @@
             <h2>Daily Specials</h2>
             <p>Served with one side</p>
             <ul class="menuItem">
-                <li><span>4 Fried Chicken Wings</span><span>11.50</span></li>
+                <li><span>4 Fried Chicken Wings</span><span>12.50</span></li>
                 <li><span>2 Piece Fried Chicken (dark)</span><span>8.99</span></li>
                 <li><span>2 Piece Fried Chicken (white)</span><span>10.49</span></li>
                 <li><span>BBQ Hot Links</span><span>9.50</span></li>
@@ -323,7 +335,7 @@
                 <li>Peach Cobbler</li>
                 <li>Banana Pudding</li>
             </ul>
-            <p>Small $3.50  |  Medium $6.50  |  Large $11.50</p><br />
+            <p>Small $4.00  |  Medium $7.00  |  Large $12.00</p><br />
         </section>
 
         <!--This is our beverage menu-->
@@ -335,7 +347,11 @@
                 <li>Lemonade</li>
                 <li>Iced Tea</li>
                 <li>Fruit Punch</li>
-                <li>Soft Drinks</li>
+                <li>Polar Blast</li>
+                <li>Pepsi</li>
+                <li>Sierra Mist</li>
+                <li>Crush Orange Soda</li>
+                <li>Dr. Pepper</li>
                 <li>Coffee</li>
                 <li>Blue Thunder - Lemonade &amp; Polar Blast</li>
                 <li>Sunrise - Lemonade &amp; Orange Juice</li>
@@ -343,7 +359,7 @@
                 <li>Twist - Lemonade &amp; Fruit Punch</li>
             </ul>
             <p>Regular $3 | Large $5</p>
-            
+
         </section>
     </main>
     

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
     <link rel="stylesheet" href="stylesheet.css">
     <style>
+        #errorMessage {
+            color: red;
+        }
     </style>
 </head>
 <body style="background-color:lightgoldenrodyellow">
@@ -39,21 +42,45 @@
     <!--MAIN CONTENT-->
     <div id="employeeContent">
         <h2>Welcome to M&amp;M Soul Food Employee Portal!</h2>
-        <p>To log in to employee website, please enter your login credentials below.<br />
-        For further assistance, please contact your manager.</p>
+        <p>
+            To log in to employee website, please enter your login credentials below.<br />
+            For further assistance, please contact your manager.
+        </p>
 
-        <form >
-        <label for="userName" id="userNameLabel">User Name:</label>
-        <input type="text" id="userName" name="userName" required><br><br>
 
-        <label for="password" id="passwordLabel">Password:</label>
-        <input type="password" id="password" name="password" required /><br /><br />
 
-        <input id="submit" type="submit">
+        <form id="customerComment">
+            <label for="userName" id="userNameLabel">User Name:</label>
+            <input type="text" id="userName" name="userName" required><br><br>
+
+            <label for="password" id="passwordLabel">Password:</label>
+            <input type="password" id="password" name="password" required /><br /><br />
+
+            <input id="submit" type="submit">
         </form>
+
+        <!--This is for my error message on click of submit button-->
+        <div id="errorMessage">
+            <p></p>
+        </div>
 
     </div>
     <!--This closes the main content div. Do not code below this line-->
+    
+    <!--This is the JavaScript for the username and password.-->
+    <script>
+        var form = document.getElementById("customerComment");
+        form.addEventListener('submit', notFound);
+
+        function notFound(e) {
+            e.preventDefault();
+            document.getElementById("errorMessage").innerHTML = "User name and password is incorrect."
+        }
+
+
+    </script>
 
 </body>
 </html>
+
+

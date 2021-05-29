@@ -11,8 +11,11 @@
         #content {
             display: grid;
             grid-template-columns: auto auto;
-            grid-template-rows: auto auto auto;
-            grid-template-areas: 'hours mainImage' 'location location' 'mapImage locationImage';
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 'welcome welcome' 'hours mainImage' 'location location' 'mapImage locationImage';
+        }
+        #welcome {
+            grid-area: welcome;
         }
         #hours {
             grid-area: hours;
@@ -89,12 +92,26 @@
 
     <!--MAIN CONTENT-->
     <div id="content">
+        
+        <div id="welcome">
+            <h1>Welcome to Venni Mac's M&amp;M Soul Food</h1>
+            <p>Home of the Original Mississippi Mary's Soul Food Restaurant</p>
+            <h2>Grand Reopening Date - June 19th, 2021</h2>
+            <p>We are currently open for take out only. Dine in services will begin once 100% capacity is allowed by CDC.</p>
+            <hr>
+        </div>
 
         <div id="hours">
             <a href="https://www.facebook.com/TheOriginalMMSoulFood/"><img class="socialMediaIcon" src="Images/facebook.jpg" /></a>
-            <a href="https://www.yelp.com/biz/m-and-m-soul-food-carson-2?osq=m%26m"><img class="socialMediaIcon" src="Images/yelp.jpg" /></a>
+            <a href="https://www.doordash.com/store/m---m-soul-food-carson-476021"><img class="socialMediaIcon" src="Images/doorDash.jpg" /></a>
+            <a href="https://www.ubereats.com/los-angeles/food-delivery/m%26m-soul-food-restaurant/3PTys-ibSfOpKM2umkJvbQ"><img class="socialMediaIcon" src="Images/uberEats.jpg" /></a>
             <a href="https://postmates.com/merchant/mm-soul-food-restaurant-carson?client=customer.web&version=3.0.0"><img class="socialMediaIcon" src="Images/postmates.jpg" /></a>
-            <h1 class="tagline">be original.</h1>
+            <a href="https://www.google.com/search?q=m%26m%20soul%20food&rlz=1C1CHBF_enUS902US902&sxsrf=ALeKk02S5YAmdScyIGGy7bqdPL_UNO9n3A:1622171353602&ei=IF2wYLSYL873-gSZrqXoAw&oq=M%26M+Soul&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIECCMQJzIECCMQJzIICC4QxwEQrwEyCAguEMcBEK8BMgUIABDJAzIFCAAQkgMyBQgAEJIDMgIIADINCC4QhwIQxwEQrwEQFDoHCAAQRxCwAzoFCAAQkQI6CwguELEDEMcBEKMCOgUIABCxAzoICAAQsQMQgwE6BAgAEEM6BwgAELEDEEM6CgguEMcBEKMCEEM6DQguELEDEMcBEKMCEEM6CggAELEDEIMBEEM6BggAEAoQQzoKCC4QxwEQrwEQQ1CizRpYy9waYIPrGmgBcAJ4AIABvAGIAcgJkgEDMC45mAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=gws-wiz&tbs=lf:1,lf_ui:9&tbm=lcl&rflfq=1&num=10&rldimm=17420278299044499106&lqi=Cg1tJm0gc291bCBmb29kGdKiKnz-mDeHSLH1h_m7gYCACFooCg1tJm0gc291bCBmb29kEAAQARACGAEYAiINbSZtIHNvdWwgZm9vZJIBFHNvdWxfZm9vZF9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1Y1dOWWVqWm5SUkFCqgEVEAEqESINbSZtIHNvdWwgZm9vZCgA&phdesc=GmN32n_lc9c&ved=2ahUKEwjP-K6as-vwAhUPs54KHSGiACIQvS4wAHoECAMQRg&rlst=f#rlfi=hd:;si:17420278299044499106,l,Cg1tJm0gc291bCBmb29kGdKiKnz-mDeHSLH1h_m7gYCACFooCg1tJm0gc291bCBmb29kEAAQARACGAEYAiINbSZtIHNvdWwgZm9vZJIBFHNvdWxfZm9vZF9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1Y1dOWWVqWm5SUkFCqgEVEAEqESINbSZtIHNvdWwgZm9vZCgA,y,GmN32n_lc9c;mv:[[33.934698399999995,-118.2651266],[33.8683336,-118.36171010000001]];tbs:lrf:!1m4!1u17!2m2!17m1!1e2!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e16!2m1!1e1!2m1!1e3!2m4!1e17!4m2!17m1!1e2!3sIAE,lf:1,lf_ui:9">
+                <img class="socialMediaIcon" src="Images/google.jpg" />
+            </a>
+            <a href="https://www.yelp.com/biz/m-and-m-soul-food-carson-2?osq=m%26m"><img class="socialMediaIcon" src="Images/yelp.jpg" /></a>
+
+           
             <h2>Hours</h2>
             <table>
                 <tr>
@@ -126,9 +143,16 @@
                     <td>8AM-8PM</td>
                 </tr>
             </table>
+            <ul>
+                <li>Breakfast is served from 8AM-12PM.</li>
+                <li>Lunch is served from Monday-Friday 11AM-3PM.</li>
+                <li>Dinner is served from Monday-Friday 12PM-8PM*.</li>
+                <li>*Last call for to go orders is 7:30PM.</li>
+            </ul>
         </div>
 
         <div id="mainImage">
+            <h1 class="tagline">be original.</h1>
             <img src="Images/dinner.jpg" class="image" />
         </div>
 
@@ -143,7 +167,7 @@
         </div>
 
         <div id="mapImage">
-            <a href="https://www.google.com/maps/dir/335+E+Albertoni+St,+Carson,+CA/M%26m+soul+food+google/@33.8718176,-118.2725093,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x80c2cac155c3bf2f:0x792d035f2bc87165!2m2!1d-118.2703406!2d33.8718751!1m5!1m1!1s0x80c2cac15587d11b:0xf1c142d0fefe4ea2!2m2!1d-118.2703007!2d33.8718889">
+            <a href="https://www.google.com/maps/dir//M%26M+soul+food/@33.9172936,-118.3504428,14.25z/data=!4m8!4m7!1m0!1m5!1m1!1s0x80c2cac15587d11b:0xf1c142d0fefe4ea2!2m2!1d-118.2702997!2d33.871833">
                 <img src="Images/map.jpg" class="image" />
             </a>
         </div>
