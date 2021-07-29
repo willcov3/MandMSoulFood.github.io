@@ -3,63 +3,82 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>M&amp;M Soul Food - Order Online</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> M&amp;M Soul Food - Order Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
     <style>
+        .mainImage {
+            height: 205px;
+            width: 205px;
+        }
     </style>
 </head>
 <body>
-    <!--WEBSITE HEADER. DO NOT CHANGE. MODIFY ON INDEX ONLY-->
-    <a href="index.html"><img id="logo" src="Images/logo.jpg" /></a>
+    <!--WEBSITE HEADER-->
     <div id="header">
-        <h1>M&amp;M Soul Food Restaurant</h1>
-        <p>335 E. Albertoni St.</p>
-        <p>Carson, CA 90746</p>
-        <p>(310) 324-5317</p>
-        <br /><br /><br />
-                    <ul class="headerMenu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutUs.html">About Us</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="orderOnline.html">Order Online</a></li>
-                        <!--<li><a href="contactUs.html">Contact Us</a></li>-->
-                    </ul>
+        <h1>Venni Mac's M&amp;M Soul Food</h1>
+
+        <br />
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="orderOnline.html">Order Online</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
     </div>
 
-    <!--THIS IS MY FOOTER. DO NOT CHANGE. MODIFY ON INDEX ONLY-->
-    <div id="footer">
-        <table class="footerMenu">
-            <tr style="width:1000px">
-                <th style="width:333px"></th>
-                <th style="width:333px"></th>
-                <th style="width:333px"></th>
-            </tr>
-            <tr>
-                <td><a href="employmentOppurtunities.html">Employment Oppurtunities</a></td>
-                <td><a href="employeePortal.html">Employee Portal</a></td>
-            </tr>
-        </table>
-    </div>
 
-    <!--THIS IS MY IN PAGE NAVIGATION MENU WHICH WILL BE USED FOR LINKS WITHIN THE PAGE-->
-    <div id="navigation">
-        <ul class="navigationMenu">
-            <li><a href="https://www.ubereats.com/los-angeles/food-delivery/m%26m-soul-food-restaurant/3PTys-ibSfOpKM2umkJvbQ">Uber Eats</a></li>
-            <li><a href="https://www.doordash.com/store/m---m-soul-food-carson-476021">Door Dash</a></li>
-        </ul>
-    </div>
+
 
     <!--MAIN CONTENT-->
     <div id="content">
-        <h2 id="">Order Online</h2>
-        <p>Online ordering available through UberEats and DoorDash - pick up and delivery.</p>
-        <a href="https://www.doordash.com/store/m---m-soul-food-carson-476021"><img src="Images/doorDash.jpg" /></a>
-        <a href="https://www.ubereats.com/los-angeles/food-delivery/m%26m-soul-food-restaurant/3PTys-ibSfOpKM2umkJvbQ"><img src="Images/uberEats.jpg" /></a>
-    </div>
-    <!--This closes the main content div. Do not code below this line-->
+        <h2>Order Online</h2>
+        <p>Online ordering is available through UberEats for pick up and delivery!</p>
+        <p>Please note UberEats may not be available on Sunday's due to high customer patronage.</p>
+        <a href="https://www.ubereats.com/los-angeles/food-delivery/m%26m-soul-food-restaurant/3PTys-ibSfOpKM2umkJvbQ"><img src="Images/uberEats.jpg" class="center mainImage"></a>
 
+        <br />
+
+      
+    </div>
+
+
+
+    <!--THIS IS MY FOOTER-->
+
+    <div id="footer">
+        <img src="Images/doubleLine.jpg" class="footerBorder" />
+        <h4>find us online</h4>
+        <a href="https://www.facebook.com/TheOriginalMMSoulFood/"><img class="socialMediaIcon rounded" src="Images/facebook.jpg" /></a>
+        <a href="https://www.google.com/search?q=m%26m%20soul%20food&rlz=1C1CHBF_enUS902US902&sxsrf=ALeKk02S5YAmdScyIGGy7bqdPL_UNO9n3A:1622171353602&ei=IF2wYLSYL873-gSZrqXoAw&oq=M%26M+Soul&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIECCMQJzIECCMQJzIICC4QxwEQrwEyCAguEMcBEK8BMgUIABDJAzIFCAAQkgMyBQgAEJIDMgIIADINCC4QhwIQxwEQrwEQFDoHCAAQRxCwAzoFCAAQkQI6CwguELEDEMcBEKMCOgUIABCxAzoICAAQsQMQgwE6BAgAEEM6BwgAELEDEEM6CgguEMcBEKMCEEM6DQguELEDEMcBEKMCEEM6CggAELEDEIMBEEM6BggAEAoQQzoKCC4QxwEQrwEQQ1CizRpYy9waYIPrGmgBcAJ4AIABvAGIAcgJkgEDMC45mAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=gws-wiz&tbs=lf:1,lf_ui:9&tbm=lcl&rflfq=1&num=10&rldimm=17420278299044499106&lqi=Cg1tJm0gc291bCBmb29kGdKiKnz-mDeHSLH1h_m7gYCACFooCg1tJm0gc291bCBmb29kEAAQARACGAEYAiINbSZtIHNvdWwgZm9vZJIBFHNvdWxfZm9vZF9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1Y1dOWWVqWm5SUkFCqgEVEAEqESINbSZtIHNvdWwgZm9vZCgA&phdesc=GmN32n_lc9c&ved=2ahUKEwjP-K6as-vwAhUPs54KHSGiACIQvS4wAHoECAMQRg&rlst=f#rlfi=hd:;si:17420278299044499106,l,Cg1tJm0gc291bCBmb29kGdKiKnz-mDeHSLH1h_m7gYCACFooCg1tJm0gc291bCBmb29kEAAQARACGAEYAiINbSZtIHNvdWwgZm9vZJIBFHNvdWxfZm9vZF9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1Y1dOWWVqWm5SUkFCqgEVEAEqESINbSZtIHNvdWwgZm9vZCgA,y,GmN32n_lc9c;mv:[[33.934698399999995,-118.2651266],[33.8683336,-118.36171010000001]];tbs:lrf:!1m4!1u17!2m2!17m1!1e2!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e16!2m1!1e1!2m1!1e3!2m4!1e17!4m2!17m1!1e2!3sIAE,lf:1,lf_ui:9">
+            <img class="socialMediaIcon rounded" src="Images/google.jpg" />
+        </a>
+        <a href="https://www.yelp.com/biz/m-and-m-soul-food-carson-2?osq=m%26m"><img class="socialMediaIcon rounded" src="Images/yelp.jpg" /></a>
+        <a href="https://www.ubereats.com/los-angeles/food-delivery/m%26m-soul-food-restaurant/3PTys-ibSfOpKM2umkJvbQ"><img class="socialMediaIcon rounded" src="Images/uberEats.jpg" /></a>
+        <a href="https://www.doordash.com/store/m---m-soul-food-carson-476021"><img class="socialMediaIcon rounded" src="Images/doorDash.jpg" /></a>
+    </div>
 
 </body>
 </html>

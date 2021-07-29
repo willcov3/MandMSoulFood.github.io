@@ -1,225 +1,163 @@
 ﻿
 body {
-    background-color: lightgray;
-    font-family: Georgia, serif;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+.btn:hover{
+    background-color:green;
+    border: 8px solid lightgreen;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /*h1 is only for the main title in the header, which is the restuarant name*/
 h1 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 66px;
 }
 
 /*h2 is for all content headers*/
 h2 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: Arial, sans-serif;
     padding: 0px;
     margin: 0px;
+    font-size: 66px;
 }
 
 /*h3 is for any special messages */
 h3 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: Arial, sans-serif;
     padding: 0px;
     margin: 0px;
+    font-size: 36px;
 }
 
-header {
-    font-family: 'Abril Fatface', cursive;
-    text-align: center;
-    font-size:72px;
-    font-weight:bold;
+/*h4 is for footer header*/
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 32px; 
 }
 
-/*Logo is fixed at the top of the web page with the header bar to its left and the navigation bar underneath*/
-#logo {
-    background-color: gray;
+/*p is for text*/
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/*Header includes name AND the main menu*/
+#header {
+    background-color: white;
+    color: black;
     position: fixed;
     top: 0px;
-    left: 0px;
-    width: 150px;
-    height: 215px;
+    height: auto;
+    width: 100%;
+    line-height: 0.8;
     z-index: 2;
 }
 
-/*Header includes name, address, phone number AND the main menu*/
-#header {
-    background-color: black;
-    position:fixed;
-    top:0px;
-    left:150px;
+.navbar {
+    border-radius: 0px;
     color: white;
-    height:215px;
-    width:100%;
-    padding-left:40px;
-    line-height:0.8;
-    z-index:2;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    height: auto;
+    overflow: hidden;
 }
-
-    .headerMenu {
-        display: inline;
-        list-style: none;
-        padding: 0px;
-        font-family: 'Abril Fatface', cursive;
-    }
-
-    .headerMenu li {
-        display: inline;
-        color: red;
-    }
-
-    .headerMenu li::after {
-        content: " | ";
-    }
-
-    .headerMenu li:last-child::after {
-        content: "";
-    }
-
-    .headerMenu a:link {
+@media screen and (max-width: 600px) {
+    .navbar {
+        border-radius: 0px;
         color: white;
-        background-color: transparent;
-        text-decoration: none;
+        font-size: 22px;
+        font-family: Arial, sans-serif;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
     }
 
-    .headerMenu a:visited {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
+    h1 {
+        font-family: "Lucida Handwriting", cursive;
+        font-size: 30px;
     }
 
-    .headerMenu a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-
-/*This is the in page navigation menu. Only used on pages that need in page navigation*/
-#navigation {
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 215px;
-    left: 0px;
-    height: 100%;
-    width: 150px;
-    z-index: 2;
-}
-
-    .navigationMenu {
+    h2 {
+        font-family: Arial, sans-serif;
         padding: 0px;
         margin: 0px;
-        width: 100%;
-        font-family: 'Abril Fatface', cursive;
+        font-size: 36px;
     }
 
-    .navigationMenu li {
-        color: white;
-        border-bottom-style: solid;
-        border-color: white;
-        border-width: thin;
-        list-style: none;
-        padding:7px 0px 0px 7px;
-        
+    #content {
+        background-color: white;
+        position: relative;
+        top: 100px;
+        z-index: 1;
+        margin: 0px 100px 0px 100px;
+        padding-bottom: 250px;
+    }
+}
+
+ul.menuItem li {
+    clear: both;
+}
+
+    ul.menuItem li span:first-child {
+        float: left;
+        padding: 0 .4em 0 0;
+        margin: 0;
     }
 
-    .navigationMenu a:link {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
+    ul.menuItem li span + span {
+        float: right;
+        padding: 0 0 0 .4em;
+        margin: 0;
     }
 
-    .navigationMenu a:visited {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    .navigationMenu a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-
-    :target {
-        padding-top: 215px;
-        margin-top: -215px;
+    ul.menuItem li:after {
+        content: "";
+        display: block;
+        overflow: hidden;
+        height: 1em;
+        border-bottom: 1px dotted;
     }
 
 /*This is the main content section*/
 #content {
+    background-color: white;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+    margin: 0px 100px 0px 100px;
+    padding-bottom:250px;
+}
+
+
+
+/*This is the footer section */
+#footer {
+    color: black;
     background-color: lightgray;
     position: relative;
-    top: 215px;
-    left: 150px;
-    bottom: 50px;
-    width: 60%;
-    z-index: 1;
-    margin: 50px 200px 300px 200px;
-}
-
-@media only screen and (max-width: 900px) {
-    #content {
-        margin: 5px 5px 5px 5px;
-    }
-}
-
-/*This is the alternate main content section for employee pages*/
-#employeeContent {
-    background-color: lightgoldenrodyellow;
-    position: relative;
-    top: 215px;
-    left: 150px;
-    bottom: 50px;
-    width: 60%;
-    z-index: 1;
-    margin: 50px 200px 300px 200px;
-}
-
-@media only screen and (max-width: 900px) {
-    #employeeContent {
-        margin: 5px 5px 5px 5px;
-    }
-}
-
-/*This is the footer section which includes employee */
-#footer {
-    color: white;
-    background-color: green;
-    position: fixed;
     bottom: 0px;
-    left: 0px;
-    height: 50px;
+    height: 150px;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
 }
 
-    .footerMenu {
-        display: inline;
-        list-style: none;
-        margin: 20px 20px 20px 20px;
+    .footerBorder {
+        width: 100%;
+        height: 10px;
     }
 
-    .footerMenu li {
-        display: inline;
-        color: white;
-    }
-
-    .footerMenu a:link {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    .footerMenu a:visited {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-    }
-
-    .footerMenu a:hover {
-        color: black;
-        background-color: transparent;
-        text-decoration: underline;
+    .socialMediaIcon {
+        height: 50px;
+        width: 50px;
+        border-radius: 75px;
     }
 
 
