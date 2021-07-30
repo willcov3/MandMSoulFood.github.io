@@ -19,9 +19,22 @@
             margin: 20px 5px 20px 5px;
             border: 8px solid black;
         }
-        .diet {
-            height: 16px;
+
+        @media screen and (max-width: 600px) {
+            .btn {
+                height: 125px;
+                width: 100%;
+                background-color: red;
+                color: black;
+                font-size: 50px;
+                margin: 5px 5px 5px 5px;
+                text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+            }
         }
+
+            .diet {
+                height: 16px;
+            }
     </style>
 </head>
 <body>
@@ -100,11 +113,11 @@
         </div>
         <br>
 
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#mainCourses" >Main Courses</button>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#mainCourses" >Dinner</button>
         <div id="mainCourses" class="collapse">
             
             <section id="mainCourses">
-                <h2>Main Courses</h2>
+                <h2>Main Dishes</h2>
                 <p>There are two sizes for our main courses: small and large.</p>
                 <ul class="menuItem">
                     <li><span>Catfish (10pc/30pc)</span><span>$70/$200</span></li>
