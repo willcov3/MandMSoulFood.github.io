@@ -91,15 +91,6 @@ p {
         margin: 0px;
         font-size: 36px;
     }
-
-    #content {
-        background-color: white;
-        position: relative;
-        top: 100px;
-        z-index: 1;
-        margin: 0px 100px 0px 100px;
-        padding-bottom: 250px;
-    }
 }
 
 ul.menuItem li {
@@ -134,6 +125,16 @@ ul.menuItem li {
     z-index: 1;
     margin: 0px 100px 0px 100px;
     padding-bottom:250px;
+}
+@media screen and (max-width: 600px) {
+    #content {
+        background-color: white;
+        position: relative;
+        top: 150px;
+        z-index: 1;
+        margin: 0px 10px 0px 10px;
+        padding-bottom: 250px;
+    }
 }
 
 

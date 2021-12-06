@@ -10,10 +10,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
     <style>
-        .btn{
-            height:200px;
+        .btn {
+            height: 200px;
             width: 100%;
             background-color: red;
+            background-image: url('Images/pinkBackground.jpg');
             color: black;
             font-size: 125px;
             margin: 20px 5px 20px 5px;
@@ -25,6 +26,7 @@
                 height: 125px;
                 width: 100%;
                 background-color: red;
+                background-image: url('Images/pinkBackground.jpg');
                 color: black;
                 font-size: 50px;
                 margin: 5px 5px 5px 5px;
@@ -32,9 +34,29 @@
             }
         }
 
-            .diet {
-                height: 16px;
-            }
+        .button:hover {
+            background-image: url('Images/greenBackground.jpg');
+        }
+        
+        .diet {
+            height: 16px;
+        }
+                
+        
+        
+    /*The primary hyperlink on home page is the print menu */
+        a:link {
+            color: darkgrey;
+        }
+
+        a:visited {
+            color: darkgrey;
+        }
+
+        a:hover {
+            color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -75,69 +97,94 @@
     <!--MAIN CONTENT-->
     <main id="content">
         <h2>Catering</h2><br />
-            <ul>
-                <li>1 Day Notice is required for most catering orders</li>
-                <li>50% Deposit required when order placed for all orders over $100</li>
-                <li>6% Service Charge for all orders over $100</li>
-            </ul>
+        <a href="cateringMenu.pdf">Click here to download printable menu.</a>
+        <ul>
+            <li>
+                Please provide a 24 hour notice for large catering orders, as same day availability is not guaranteed.
+            </li>
+            <li>
+                50% deposit required for orders over $100
+            </li>
+            <li>
+                10% Service Fee required for orders over $250 and 15% for orders over $1000
+            </li>
+            <li>
+                Delivery may be available for orders over $500 under certain circumstances
+            </li>
+            <li>
+                No taxes charged on catering orders for churches or schools
+            </li>
+        </ul>
         <p>Click tabs below to view menu.</p>
         <br>
 
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#breakfast";>Breakfast</button>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#breakfast" ;>Breakfast</button>
         <div id="breakfast" class="collapse">
             <section id="breakfast">
-                <p>Prices below are for each serving.</p>
+                <p>Breakfast pans are based on the number of servings you need per person. Prices below are per person.</p>
                 <ul class="menuItem">
                     <li><span>Sausage Patty (Pork, Turkey, or Beef)</span><span>4.00</span></li>
                     <li><span>Bacon (Pork or Turkey)-4pc</span><span>4.00</span></li>
                     <li><span>Turkey Links-4pc</span><span>4.00</span></li>
-                    <li><span>Red Snapper</span><span>5.00</span></li>
-                    <li><span>Catfish</span><span>6.00</span></li>
-                    <li><span>Salmon Croquettes</span><span>13.25</span></li>
-                    <li><span>Turkey Chop (1)</span><span>4.25</span></li>
-                    <li><span>Pork Chop (1)</span><span>4.25</span></li>
-                    <li><span>Chicken Wings (2)</span><span>4.50</span></li>
-                    <li><span>Bacon Strips (Turkey or Pork)</span><span>3.75</span></li>
+                    <li><span>Red Snapper</span><span>6.50</span></li>
+                    <li><span>Catfish</span><span>7.50</span></li>
+                    <li><span>Salmon Croquettes(1)</span><span>4.00</span></li>
+                    <li><span>Turkey Chop (1)</span><span>5.00</span></li>
+                    <li><span>Pork Chop (1)</span><span>5.00</span></li>
+                    <li><span>Chicken Wings (2)</span><span>6.00</span></li>
                 </ul><br>
-                          
+
                 <h2>Breakfast Sides</h2>
                 <ul class="menuItem">
-                    <li><span>Eggs (2)</span><span>3.50</span></li>
+                    <li><span>Eggs (2)</span><span>4.00</span></li>
                     <li><span>Country Style Potatoes</span><span>4.00</span></li>
                     <li><span>Rice</span><span>3.00</span></li>
                     <li><span>Grits</span><span>3.00</span></li>
+                    <li><span>Biscuit 2pc</span><span>2.00</span></li>
+                    <li><span>Toast 2pc</span><span>1.00</span></li>
+                    <li><span>Waffle (1)</span><span>6.00</span></li>
+                    <li><span>Pancake (1)</span><span>2.00</span></li>
                 </ul><br>
 
-                <p>Waffles, pancakes, and biscuits are not available for catering orders.</p>
+                <p>
+                    Waffles and pancakes are not recommended for catering orders for quality purposes.<br />
+                    There are quantity limitis on waffles, pancakes, and biscuits.
+                </p>
             </section>
         </div>
         <br>
 
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#mainCourses" >Dinner</button>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#mainCourses">Dinner</button>
         <div id="mainCourses" class="collapse">
-            
+
             <section id="mainCourses">
                 <h2>Main Dishes</h2>
                 <p>There are two sizes for our main courses: small and large.</p>
                 <ul class="menuItem">
-                    <li><span>Catfish (10pc/30pc)</span><span>$70/$200</span></li>
-                    <li><span>Red Snapper (10pc/30pc)</span><span>$60/$175</span></li>
-                    <li><span>Turkey Chops (10pc/30pc)</span><span>$40/$110</span></li>
-                    <li><span>Pork Chops (10pc/30pc)</span><span>$40/$110</span></li>
-                    <li><span>BBQ Chicken* (10/30 1/4 pc)</span><span>$37/$100</span></li>
-                    <li><span>Baked Chicken* (10/30 1/4 pc)</span><span>$37/$100</span></li>
-                    <li><span>Smothered Chicken* (10pc/30pc)</span><span>$25/$70</span></li>
-                    <li><span>Fried Chicken* (10pc/30pc)</span><span>$25/$70</span></li>
-                    <li><span>Turkey Wings (10pc/30pc)</span><span>$40/$110</span></li>
-                    <li><span>Short Ribs (10pc/30pc)</span><span>$75/$215</span></li>
-                    <li><span>Ox Tails (40pc/120pc)</span><span>$100/$275</span></li>
+                    <li><span>Catfish (10pc/30pc)</span><span>$80/$240</span></li>
+                    <li><span>Red Snapper (10pc/30pc)</span><span>$70/$210</span></li>
+                    <li><span>Turkey Chops (10pc/30pc)</span><span>$50/$150</span></li>
+                    <li><span>Pork Chops (10pc/30pc)</span><span>$50/$150</span></li>
+                    <li><span>BBQ Chicken* (10/30 1/4 pc)</span><span>$50/$150</span></li>
+                    <li><span>Baked Chicken* (10/30 1/4 pc)</span><span>$50/$150</span></li>
+                    <li><span>Turkey Wings (10pc/30pc)</span><span>$50/$150</span></li>
+                    <li><span>Short Ribs (10pc/30pc)</span><span>$100/$300</span></li>
+                    <li><span>Ox Tails (40pc/120pc)</span><span>$120/$360</span></li>
                 </ul>
                 <p style="font-style:italic;">*Additional charge for white meat</p><br />
+                <h2>Fried Chicken</h2>
+                <p>Fried chicken is sold by the piece.</p>
+                <ul class="menuItem">
+                    <li><span>Leg</span><span>$2</span></li>
+                    <li><span>Wing</span><span>$3</span></li>
+                    <li><span>Thigh</span><span>$3</span></li>
+                    <li><span>Breast</span><span>$4</span></li>
+                </ul>
             </section>
         </div>
         <br>
 
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sideDishes" >Side Dishes</button>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sideDishes">Side Dishes</button>
         <div id="sideDishes" class="collapse">
             <section id="sideDishes">
                 <p>Small Pans feed 15-18 people and Large Pans feed 45-50 people </p>
@@ -154,10 +201,11 @@
                     <li><span>Red Beans<img src="Images/t.jpg" class="diet" /><img src="Images/b.jpg" class="diet" /></span><span>$30/$55</span></li>
                     <li><span>Buttered Corn<img src="Images/v.jpg" class="diet" /></span><span>$30/$55</span></li>
                     <li><span>Mashed Potatoes<img src="Images/v.jpg" class="diet" /></span><span>$30/$55</span></li>
-                    <li><span>Rice<img src="Images/v.jpg" class="diet" /></span><span>$30/$55</span></li>
+                    <li><span>Rice<img src="Images/v.jpg" class="diet" /></span><span>$25/$45</span></li>
+                    <li><span>Cornbread Dozen</span><span>$12</span></li>
                 </ul>
                 <p>
-                    <img src="Images/v.jpg" class="diet" /> Indicates vegetarian dish. These dishes do not include meat. <br />
+                    <img src="Images/v.jpg" class="diet" /> Indicates vegetarian dish. These dishes do not include meat. Please note that our gravy is NOT vegetarian, as it is made with turkey broth <br />
                     <img src="Images/t.jpg" class="diet" /> Indicates turkey is added to the dish<br />
                     <img src="Images/b.jpg" class="diet" /> Indicates beef is added to the dish<br />
                 </p>

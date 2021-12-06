@@ -49,6 +49,9 @@
             width: 300px;
         }
 
+        .jumboImage {
+            width:70%;
+        }
         @media screen and (max-width: 600px) {
             .locationImage {
                 float: right;
@@ -65,16 +68,30 @@
                 border: 3px solid black;
                 padding: 0px 0px 0px 0px;
             }
+            .jumboImage {
+                width: 90%;
+            }
     
         }
 
-            .location {
-                background-color: lightpink;
-            }
+        .location {
+            background-color: lightpink;
+            background-image: url('Images/pinkBackground.jpg');
+            font-weight: bold;
+        }
 
-            .soulFood {
-                background-color: lightgreen;
-            }
+        .soulFood {
+            background-color: lightgreen;
+            background-image: url('Images/greenBackground2.jpg');
+            font-weight: bold;
+        }
+
+
+        /*The primary hyperlink on home page is the address */
+        a:link { color: black; }
+        a:visited {color: black; }
+        a:hover {color: darkgrey; }
+
     </style>
 </head>
 <body>
@@ -115,13 +132,13 @@
 
     <!--MAIN CONTENT-->
     <div id="content">
-        <img src="Images/jumboImage.jpg" class="center">
+        <img src="Images/jumboImage.jpg" class="center jumboImage">
 
         <br />
 
         <div id="myMarquee">
             <marquee width="80%" direction="left" height="38px" scrollamount="12">
-                Now Open for Dine In and Take Out! * (310) 324-5317 * Off the 91 and 110 FWY * Chitterlings served year round! * Be Original !!!
+                Now Open for Dine In and Take Out! * (310) 324-5317 * Off the 91 and 110 FWY * Open 7 days a week from 8AM-8PM * Chitterlings served year round! * Be Original !!!
             </marquee>
         </div>
 
@@ -268,7 +285,7 @@
             <h3>Hours</h3>
 
             <p>
-                8AM-9PM ~ Last call for dine in and take out is 8:30PM. <br />Open 7 Days a Week! ~ CAUTION: Extremley Busy Sunday's!<br />
+                8AM-8PM ~ Last call for dine in and take out is 7:30PM. <br />Open 7 Days a Week! ~ CAUTION: Extremley Busy Sunday's!<br />
             </p>
 
             <br />
@@ -276,7 +293,7 @@
             <ul>
                 <li>Breakfast is served from 8AM-12PM.</li>
                 <li>Lunch is served from Monday-Friday 11AM-3PM.</li>
-                <li>Dinner is served from Sunday-Saturday 11AM-9PM*.</li>
+                <li>Dinner is served from Sunday-Saturday 11AM-8PM*.</li>
             </ul>
 
             <br />
